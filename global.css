@@ -14,12 +14,13 @@ body {
     width: 1440px;
     margin-left: calc(50% - 720px);
     display: inline-block;
+    height: 100vh;
     position: relative;
 }
 
 :root {
     --bgrey: #F7F6FF;
     --navgrey: #C4C4C4;
-    --dgrey: #E5E5E5;
+    --dgrey:#EBEEF5;
     --footer: #02577A;
 }
