@@ -1,24 +1,29 @@
 nav {
+    display: block;
     list-style-type: none;
-    width: 100px;
+    max-width: 206px;
+    width: 206px;
     background-color: var(--bgrey);
     margin: 0;
     padding: 0;
     position: fixed;
     height: 100%;
+    overflow: auto;
 }
 
 .navlogo {
     display: inline-block;
     margin-top: 52px;
-    margin-left: 16px;
+    margin-left: 39px;
+    margin-right: 39px;
     padding-bottom: 24px;
     border-bottom: 2px solid var(--navgrey);
-    width: 62.24px;
+    width: 128px;
+    text-align: center;
 }
 
 .vector-1 {
-    display: inline-block;
+    display: inline;
     padding-top: 34px;
     margin-left: 37px;
     margin-right: 38px;
@@ -30,8 +35,8 @@ nav {
 }
 
 .a-nav {
-    display: none;
-    width: 100px;
+    float: right;
+    width: 105px;
     padding: 37px 0 0 0;
     font-size: 16px;
     color: var(--navgrey);
@@ -39,16 +44,18 @@ nav {
 
 main {
     float: right;
-    width: 1340px;
+    width: 1234px;
     height: 100%;
     background-color: var(--dgrey);
+    position: relative;
 }
 
 footer {
     float: right;
-    width: 1340px;
+    width: 1234px;
     height: 35px;
     background-color: var(--dgrey);
+    position: relative;
 }
 
 .footer-text {
