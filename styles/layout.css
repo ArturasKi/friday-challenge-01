@@ -1,70 +1,93 @@
-nav {
-    display: block;
-    list-style-type: none;
-    max-width: 206px;
-    width: 206px;
+.sidebar {
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100vh;
+    box-shadow: 5px 0px 5px -5px;
     background-color: var(--bgrey);
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+    transition: 0.5s ease-out;
 }
 
-.navlogo {
-    display: inline-block;
+.sidebar:hover {
+    width: 206px;
+}
+
+.logo {
+    width: 68px;
     margin-top: 52px;
-    margin-left: 39px;
-    margin-right: 39px;
-    padding-bottom: 24px;
-    border-bottom: 2px solid var(--navgrey);
-    width: 128px;
-    text-align: center;
+    margin-left: calc(50% - 34px);
 }
 
-.vector-1 {
-    display: inline;
-    padding-top: 34px;
-    margin-left: 37px;
-    margin-right: 38px;
+.hline {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    width: 62%;
+    margin-left: calc(50% - 62%/2);
+    border: 1px solid var(--navgrey);
+}
+
+.nav-row {
+    position: relative;
+    display: inline-block;
+    margin: 11px 0 0 11px;
+    width: calc(100% - 11px);
+    height: 57px;
+    border-radius: 25px 0 0 25px;
+}
+
+.nav-row:hover {
+    background-color: #fff;
+}
+
+.nav-row:first-of-type {
+    background-color: #fff;
+}
+
+.nav-icon {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    top: calc(50% - 25px / 2);
+    left: 32px;
+}
+
+.nav-txt {
+    position: absolute;
+    
+    width: auto;
+    height: 20px;
+    top: calc(50% - 19px / 2);
+    left: 76px;
+    font-size: 0px;
+    text-decoration: none;
     color: var(--text1);
+    transition: all ,.3s ease-in-out, .3s ease-in-out;
 }
 
-.vector-2 {
-    padding: 34px 30px 0 30px;
-}
-
-.a-nav {
-    float: right;
-    width: 105px;
-    padding: 37px 0 0 0;
+.sidebar:hover * > .nav-txt {
     font-size: 16px;
-    color: var(--navgrey);
+    display: inline-block;
 }
 
 main {
-    float: right;
-    width: 1234px;
-    height: 100%;
+    height: 100vh;
+    width: 1340px;
     background-color: var(--dgrey);
-    position: relative;
 }
 
-footer {
-    float: right;
-    width: 1234px;
-    height: 35px;
-    background-color: var(--dgrey);
-    position: relative;
-}
-
-.footer-text {
+.copy {
     width: 346px;
+    height: 35px;
+    padding-top: 11px;
     font-size: 11px;
     text-align: center;
     position: absolute;
+    bottom: 0;
+    left: 0;
     transform: translateX(497px);
     color: var(--text1);
     border-top: 1px solid var(--text1);
-    padding-top: 11px;
 }
