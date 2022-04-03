@@ -41,10 +41,6 @@
     background-color: #fff;
 }
 
-.nav-row:first-of-type {
-    background-color: #fff;
-}
-
 .nav-icon {
     position: relative;
     display: inline-block;
@@ -52,6 +48,10 @@
     height: 25px;
     top: calc(50% - 25px / 2);
     left: 32px;
+}
+
+.nav-row:hover > .nav-icon {
+    filter: invert(100%) sepia(85%) saturate(1637%) hue-rotate(173deg) brightness(92%) contrast(98%);
 }
 
 .nav-txt {
@@ -63,13 +63,17 @@
     left: 76px;
     font-size: 0px;
     text-decoration: none;
-    color: var(--text1);
+    color: var(--navgrey);
     transition: all ,.3s ease-in-out, .3s ease-in-out;
 }
 
 .sidebar:hover * > .nav-txt {
     font-size: 16px;
     display: inline-block;
+}
+
+.nav-row:hover > .nav-txt {
+    color: var(--text1);
 }
 
 main {
