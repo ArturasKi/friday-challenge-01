@@ -127,6 +127,7 @@ h1 {
     display: inline-block;
     margin-left: 100px;
     margin-top: 49px;
+    margin-bottom: 78px;
     border: 2px solid var(--text1);
     border-radius: 25px;
     padding: 49px 185px;
@@ -141,16 +142,13 @@ footer {
     line-height: 13px;
 }
 
-.copy {
-    margin-top: 43px;
-    padding-top: 10px;
-    font-size: 11px;
-    text-align: center;
-    color: var(--text1);
+.line {
     border-top: 1px solid var(--text1);
+    display: inline-block;
+    padding: 10px 99px;
 }
 
-@media (max-width: 1078px) {
+@media (max-width: 768px) {
     .morning {
         float: left;
         margin-left: 141px;
@@ -172,5 +170,9 @@ footer {
         border: 2px solid var(--text1);
         border-radius: 25px;
         padding: 40px 64px;
+    }
+    .line {
+        margin-left: 125px;
+        margin-right: 25px;
     }
 }
