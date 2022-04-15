@@ -101,11 +101,12 @@ h1 {
 
 .date {
     float: right;
-    width: 516px;
-    margin: 56px 67px 0 0;
+    margin-top: 56px;
+    margin-right: 67px;
     border-radius: 25px;
     background-color: var(--white);
     padding: 22px 96px;
+    height: 147px;
 }
 
 .time-1 {
@@ -120,8 +121,13 @@ h1 {
 }
 
 .img {
+    background-image: url(../assets/workplace.png);
+    background-position: center;
+    background-size: cover;
     margin-top: 226px;
     max-width: 100vw;
+    width: 100%;
+    height: 432px;
 }
 
 .quote {
@@ -150,16 +156,19 @@ footer {
 @media (max-width: 1070px) {
     .morning {
         margin-left: 141px;
+        margin-top: 33px;
         margin-bottom: 13px;
     }
     .date {
         margin-left: 125px;
         margin-right: 25px;
         margin-top: 44px;
+        height: 147px;
         padding: 20px;
     }
     .img {
         margin-top: 317px;
+        max-height: 283px;
     }
     .quote {
         display: inline-block;
