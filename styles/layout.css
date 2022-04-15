@@ -85,6 +85,7 @@ main {
 }
 
 .morning {
+    float: left;
     margin-top: 89px;
     margin-left: 206px;
 }
@@ -98,20 +99,12 @@ h1 {
     font-weight: 500;
 }
 
-.border {
-    width: 516px;
-    height: 147px;
+.date {
+    float: right;
+    margin: 56px 67px 0 0;
     border-radius: 25px;
     background-color: var(--white);
     padding: 22px 96px;
-    top: 0;
-    left: 0px;
-    transform: translate(857px, 56px);
-}
-
-.date {
-    width: 324px;
-    height: 103px;
 }
 
 .time-1 {
@@ -125,17 +118,12 @@ h1 {
     font-weight: 500;
 }
 
-.img-work {
-    background-position: center;
+.img {
+    margin-top: 226px;
     width: 100%;
-    overflow: hidden;
 }
 
-.img-work > img-work {
-    object-fit: cover;
-}
-
-.border-2 {
+.quote {
     display: inline-block;
     margin-left: 100px;
     margin-top: 49px;
@@ -162,12 +150,21 @@ footer {
     border-top: 1px solid var(--text1);
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1078px) {
     .morning {
-        margin-top: 224px;
+        float: left;
         margin-left: 141px;
     }
-    .border-2 {
+    .date {
+        float: left;
+        margin-left: 125px;
+        margin-bottom: 15px;
+        padding: 20px;
+    }
+    .img {
+        margin-top: 317px;
+    }
+    .quote {
         display: inline-block;
         margin-top: 26px;
         margin-left: 125px;
