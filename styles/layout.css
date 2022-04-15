@@ -1,6 +1,5 @@
 .sidebar {
     position: absolute;
-    float: left;
     left: 0;
     top: 0;
     width: 100px;
@@ -78,7 +77,7 @@
 
 main {
     height: 906px;
-    width: 1340px;
+    width: 1440px;
     background-color: var(--dgrey);
 }
 
@@ -117,8 +116,8 @@ h1 {
     background-color: var(--white);
     padding: 22px 96px;
     top: 0;
-    right: 0px;
-    transform: translate(-167px, 56px);
+    left: 0px;
+    transform: translate(857px, 56px);
 }
 
 .date {
@@ -138,13 +137,10 @@ h1 {
 }
 
 .img-work {
-    /* width: 1235px;
-    height: 397px; */
-    background-size: ;
     left: 103px;
     top: 226px;
     margin-top: 226px;
-    /* margin-left: 103px; */
+    margin-left: 95px;
 }
 
 .border-2 {
