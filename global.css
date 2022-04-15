@@ -7,10 +7,7 @@ body * {
 }
 
 body {
-    width: 1440px;
-    margin-left: calc(50% - 720px);
-    height: 100vh;
-    position: relative;
+    background-color: var(--dgrey);
     font-family: 'Montserrat';
 }
 

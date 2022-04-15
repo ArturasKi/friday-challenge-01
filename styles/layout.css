@@ -1,10 +1,10 @@
 .sidebar {
-    position: absolute;
+    position: fixed;
     left: 0;
-    top: 0;
     width: 100px;
-    height: 906px;
-    box-shadow: 5px 0px 5px -5px;
+    height: 100vh;
+    float: left;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: var(--bgrey);
     transition: 0.5s ease-out;
 }
@@ -76,40 +76,29 @@
 }
 
 main {
-    height: 906px;
-    width: 1440px;
+    display: inline-block;
+    margin-left: 100px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
     background-color: var(--dgrey);
 }
 
-.copy {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(547px, 871px);
-    width: 346px;
-    height: 35px;
-    padding-top: 10px;
-    font-size: 11px;
-    text-align: center;
-    color: var(--text1);
-    border-top: 1px solid var(--text1);
-}
-
 .morning {
-    position: absolute;
-    width: 380px;
-    height: 80px;
-    margin: 89px 0 0 206px;
+    margin-top: 89px;
+    margin-left: 206px;
 }
 
 h1 {
+    padding-top: 59px;
+    padding-left: 100px;
+    float: left;
     font-size: 36px;
+    text-align: left;
     font-weight: 500;
-    line-height: 44px;
 }
 
 .border {
-    position: absolute;
     width: 516px;
     height: 147px;
     border-radius: 25px;
@@ -137,21 +126,54 @@ h1 {
 }
 
 .img-work {
-    left: 103px;
-    top: 226px;
-    margin-top: 226px;
-    margin-left: 95px;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-work > img-work {
+    object-fit: cover;
 }
 
 .border-2 {
-    position: absolute;
-    width: 898px;
-    height: 121px;
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 49px;
     border: 2px solid var(--text1);
     border-radius: 25px;
     padding: 49px 185px;
-    top: 0;
-    left: 0;
-    transform: translate(271px, 707px);
 }
 
+footer {
+    margin-top: 43px;
+    width: 100%;
+    text-align: center;
+    padding: 11px 81px;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.copy {
+    margin-top: 43px;
+    padding-top: 10px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--text1);
+    border-top: 1px solid var(--text1);
+}
+
+@media (max-width: 1060px) {
+    .morning {
+        margin-top: 224px;
+        margin-left: 141px;
+    }
+    .border-2 {
+        display: inline-block;
+        margin-top: 26px;
+        margin-left: 125px;
+        margin-right: 18px;
+        border: 2px solid var(--text1);
+        border-radius: 25px;
+        padding: 40px 64px;
+    }
+}
