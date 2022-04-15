@@ -154,6 +154,7 @@ footer {
     .date {
         float: left;
         margin-left: 125px;
+        margin-right: 25px;
         margin-bottom: 15px;
         padding: 20px;
     }
