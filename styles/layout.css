@@ -158,7 +158,7 @@ footer {
 @media (max-width: 1070px) {
     .morning {
         margin-left: 141px;
-        margin-top: 33px;
+        margin-top: 15px;
         margin-bottom: 13px;
     }
     .date {
@@ -182,6 +182,9 @@ footer {
     .line {
         margin-left: 125px;
         margin-right: 25px;
+    }
+    h1 {
+        font-size: 29px;
     }
 }
 
