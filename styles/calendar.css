@@ -28,6 +28,7 @@ main {
 }
 
 .calendar {
+    display: grid;
     height: 576px;
     width: 100%;
     background-color: white;
