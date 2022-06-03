@@ -60,7 +60,7 @@ main {
 
 .month h1 {
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     margin-bottom: 1rem;
@@ -72,6 +72,7 @@ main {
 
 .date {
     margin: 0;
+    font-weight: bold;
 }
 
 .weekdays {
@@ -85,7 +86,7 @@ main {
 
 .weekdays div {
     font-size: 1.5rem;
-    font-weight: 400;
+    color: #777;
     letter-spacing: 0.1rem;
     width: calc(44.2rem/7);
     display: flex;
@@ -102,6 +103,7 @@ main {
 
 .days div {
     font-size: 1.4rem;
+    font-weight: bold;
     margin: 0.3rem;
     width: calc(40.2rem / 7);
     height: 5rem;
@@ -123,7 +125,9 @@ main {
 }
 
 .today {
-    background-color: #167e56;
+    background-color: var(--text1);
+    color: #fff;
+    border-radius: 50%;
 }
 
 .block p {
