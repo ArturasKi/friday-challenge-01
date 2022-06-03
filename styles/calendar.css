@@ -128,6 +128,11 @@ main {
     opacity: 0.5;
 }
 
+.prev-date:hover,
+.next-date:hover {
+    opacity: 1;
+}
+
 .today {
     background-color: var(--text1);
     color: #fff;
