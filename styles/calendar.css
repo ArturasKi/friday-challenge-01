@@ -59,11 +59,13 @@ main {
 }
 
 .month h1 {
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    margin-bottom: 1rem;
+    padding-top: 21px;
+    width: 100%;
+    text-align: center;
 }
 
 .month p {
@@ -85,7 +87,7 @@ main {
 }
 
 .weekdays div {
-    font-size: 1.5rem;
+    font-size: 24px;
     color: #777;
     letter-spacing: 0.1rem;
     width: calc(44.2rem/7);
@@ -102,21 +104,23 @@ main {
 }
 
 .days div {
-    font-size: 1.4rem;
+    font-size: 24px;
     font-weight: bold;
     margin: 0.3rem;
     width: calc(40.2rem / 7);
-    height: 5rem;
+    height: 5.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
     transition: background-color 0.2s;
 }
 
 .days div:hover:not(.today) {
-    background-color: #262626;
-    border: 0.2rem solid #777;
+    background-color: var(--text1);
+    border-radius: 50%;
     cursor: pointer;
+    color: #fff;
 }
 
 .prev-date,

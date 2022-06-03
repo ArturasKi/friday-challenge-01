@@ -3,6 +3,8 @@ const date = new Date();
 const renderCalendar = () => {
     date.setDate(1);
 
+    console.log(Date())
+
     console.log(date.getDay());
     
     const monthDays = document.querySelector('.days')
@@ -44,8 +46,8 @@ const renderCalendar = () => {
     document.querySelector('.date h1').innerHTML
     = months[date.getMonth()];
     
-    document.querySelector('.date p').innerHTML
-    = new Date().toDateString();
+    // document.querySelector('.date p').innerHTML
+    // = new Date().toDateString();
     
     let days = '';
     
